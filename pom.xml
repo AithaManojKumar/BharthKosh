@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.pdf.sign</groupId>
+	<artifactId>document</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>document</name>
+	 <packaging>war</packaging>
+	<description>Project of Document Sing</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<!-- <repositories>
+	<repository>
+	<id>libs</id>
+	<url>file://${basedir}/libs</url>
+	</repository>
+	</repositories> -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!-- Swagger -->
+		<!-- <dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		 -->
+		<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <exclusions>
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
+		<!-- <dependency>
+			<groupId>commons-io-2.4</groupId>
+			<artifactId>commons-io-2.4</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}\src\lib\commons-io-2.4.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>eSignASPLibrary</groupId>
+			<artifactId>eSignASPLibrary</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}\src\lib\eSignASPLibrary.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>log4j-api-2.16.0</groupId>
+			<artifactId>log4j-api-2.16.0</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}\src\lib\log4j-api-2.16.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>log4j-core-2.16.0</groupId>
+			<artifactId>log4j-core-2.16.0</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}\src\lib\log4j-core-2.16.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>log4j-slf4j-impl-2.16.0</groupId>
+			<artifactId>log4j-slf4j-impl-2.16.0</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}\lib\log4j-slf4j-impl-2.16.0.jar</systemPath>
+		</dependency> -->
+		<dependency>
+			<groupId>com.helger</groupId>
+			<artifactId>ph-xmldsig</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		
+		<!-- <dependency>
+			<groupId>commons-io-2.4</groupId>
+			<artifactId>commons-io-2.4</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>eSignASPLibrary</groupId>
+			<artifactId>eSignASPLibrary</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j-api-2.16.0</groupId>
+			<artifactId>log4j-api-2.16.0</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j-core-2.16.0</groupId>
+			<artifactId>log4j-core-2.16.0</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j-slf4j-impl-2.16.0</groupId>
+			<artifactId>log4j-slf4j-impl-2.16.0</artifactId>
+			<version>1.0</version>
+		</dependency> -->
+	</dependencies>
+	
+	
+
+	<build>
+	  <finalName>BharatDigitalPayment</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				 <configuration>
+    				<includeSystemScope>true</includeSystemScope>
+  				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
